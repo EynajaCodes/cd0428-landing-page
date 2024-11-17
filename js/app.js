@@ -70,7 +70,7 @@ const activeClass = document.querySelector('.your-active-class');
 
 
 
-/* const addToNav = () => {
+const addToNav = () => {
     for (section of sectionAll) {
         const newListItem = document.createElement('li');
         const navLinks = document.createElement('a');
@@ -79,11 +79,11 @@ const activeClass = document.querySelector('.your-active-class');
 
     }
 };
-*/
+
 
 // Trying to Build menu a different way, since it wasn't working before. I hope using document fragments work better.
 
-const NavBuild = () => {
+/*const NavBuild = () => {
     const navFragment = document.createDocumentFragment();
 
     sectionAll.forEach(section => () {
@@ -101,9 +101,9 @@ const NavBuild = () => {
     };
     navBarList.appendChild(navFragment);
 };
+*/
 
-
-/* addToNav();*/
+addToNav();
 
 // Scroll to section on link click
 const sectionScroll = document.querySelectorAll('menu__link')
